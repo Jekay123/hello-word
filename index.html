@@ -1,3 +1,21 @@
-var oBtn = function(){
-   alter（123）
-};
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title></title>
+	<style>
+	<link rel="stylesheet" href="../simplecss/css/bootstrap.css">
+	</style>
+</head>
+<body>
+	<button id="btn">点击弹出Hello word！</button>
+	<script type="text/javascript">
+		var oBtn = document.getElementById("btn") 
+		oBtn.onclick = function(ev){
+			var ev = ev || event
+			alert("Hello Word!")
+		}
+	</script>
+</body>
+</html>
+
